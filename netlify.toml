@@ -21,12 +21,12 @@
   to = "/"
   status = 200
 
-# Headers for security and performance
+# Headers for security and performance - Configured for Executa Solutions
 [[headers]]
   for = "/*"
   [headers.values]
     X-Frame-Options = "ALLOWALL"
-    Content-Security-Policy = "frame-ancestors 'self' https://your-wordpress-domain.com"
+    Content-Security-Policy = "frame-ancestors 'self' https://executasolutions.com"
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
